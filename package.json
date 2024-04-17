@@ -1,0 +1,28 @@
+{
+  "name": "arabdtapi",
+  "version": "1.0.0",
+  "description": "This is the pet store sample hosted at https://petstore3.swagger.io. For other versions, check the branches.\r We welcome suggestion both the code and the API design.\r To make changes to the design itself, take a look at https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.7.3"
+  },
+  "dependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/ArabDTAPI/userAPI",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber",
+      "merge": true
+    }
+  }
+}
